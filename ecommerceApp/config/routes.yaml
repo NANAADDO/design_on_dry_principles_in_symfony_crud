@@ -1,0 +1,27 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+status_index:
+    path: /status
+    controller: 'App\Controller\StatusController::index'
+    methods: ['GET']
+status_create:
+    path: /status
+    controller: 'App\Controller\StatusController::create'
+    methods: ['POST']
+status_edit:
+    path: /status/{id}
+    controller: 'App\Controller\StatusController::edit'
+    methods: ['PUT']
+status_update:
+    path: /status/{id}
+    controller: 'App\Controller\StatusController::update'
+    methods: ['PATCH']
+product_api_delete:
+    path: /status/{id}
+    controller: 'App\Controller\StatusController::delete'
+    methods: ['DELETE']
+    prefix: /api/v1
+
